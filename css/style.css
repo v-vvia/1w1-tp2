@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* //////////////feuille de style principal tp2 */
+
+/* //////////////////Téléchargements de police */
+
+
 body{
 
 
@@ -14,7 +19,7 @@ body{
     margin: 0 auto;
     background-color: rgba(0,0, 0,0,1);
     padding: 30px;
-    border: 3px solid black;
+    border: 3px solid lightpink;
     
 }
 #section-1{

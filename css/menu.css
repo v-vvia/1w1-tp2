@@ -15,15 +15,18 @@
 
 
 .entete__navigation {
-    /* transform: translateY(-200px);
-    transition: transform .25s; */
-    /* right: 1px; */
+    transform: translateY(-200px);
+    transition: transform .25s;
+    padding-left: 10px;
+    padding-top: 15px;
     display: flex;
-    max-width:1000px; ;
+    width:850px;
     flex-direction: row;
     position: fixed;
     gap: 60px;
-    justify-content: flex-end
+    justify-content: space-between;
+    
+    
     
     
 }
