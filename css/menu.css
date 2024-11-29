@@ -1,5 +1,5 @@
 #bouton{
-    position: fixed;
+    position:relative;
     top: 10px;
     left: 5px;
     
@@ -15,14 +15,16 @@
 
 
 .entete__navigation {
-    transform: translateY(-200px);
-    transition: transform .25s;
-    right: px;
+    /* transform: translateY(-200px);
+    transition: transform .25s; */
+    /* right: 1px; */
     display: flex;
+    max-width:1000px; ;
     flex-direction: row;
     position: fixed;
     gap: 60px;
-    justify-content: center;
+    justify-content: flex-end
     
     
 }
+
