@@ -1,0 +1,28 @@
+#bouton{
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    
+}
+
+#chk-bouton:checked +nav{
+    display: flex;
+    transform: translateX(0);
+}
+#chk-bouton{
+    display: none;
+}
+
+
+.entete__navigation {
+    transform: translateY(-200px);
+    transition: transform .25s;
+    right: px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    gap: 60px;
+    justify-content: center;
+    
+    
+}
