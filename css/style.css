@@ -9,6 +9,13 @@
 
 
 body{
+    background-image: url("../img/Fond3.jpg") ;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-color: #ffffff20;
+    backdrop-filter: blur(5px); */
+
+    
 
 
 
@@ -19,10 +26,51 @@ body{
     margin: 0 auto;
     background-color: rgba(0,0, 0,0,1);
     padding: 30px;
-    border: 3px solid lightpink;
+    border: 3px solid rgb(19, 19, 19);
+    background-color:#ffffffed;
     
 }
-#section-1{
-    background-color: rgb(190, 220, 248);
-    
- }
+
+/* ////////////////////////////////////////////////////////Articles Principaux////////////////// */
+.article{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 5px;
+  
+  }
+  
+  
+  .article figure{
+  flex: 0 0 300px;
+  /* transform: scale(.9);
+  filter:grayscale(1);
+  transition: transform .25s, filter .25s; */
+  
+  }
+  .article figure img {
+    border-radius: 50%;
+    width : 100%;
+}
+
+  .article:nth-of-type(odd) figure{
+    order : 9;
+  }
+  .article:hover{
+    transform: scale(2);
+  /* filter:grayscale(1); */
+  transition: transform 2.5s;
+  background-color: #fff;
+  align-self: baseline;
+  
+  
+  }
+  .Texte{
+    padding-left: 25px;
+  }
+  figcaption{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }

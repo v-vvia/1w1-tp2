@@ -14,10 +14,10 @@
 }
 
 
-.entete__navigation {
+.Entete__navigation{
     transform: translateY(-200px);
     transition: transform .25s;
-    padding-left: 10px;
+    padding-left: 60px;
     padding-top: 15px;
     display: flex;
     width:850px;
@@ -26,8 +26,9 @@
     gap: 60px;
     justify-content: space-between;
     
-    
-    
-    
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
