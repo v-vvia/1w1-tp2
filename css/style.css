@@ -207,9 +207,22 @@ label{
 
 
 /* /////////////////////////////////////////////////////////////////tableau/////////////////////////////////////////// */
+.tableau__{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  
+}
 .tableau{
-  width: ;
+  width:900px;
+  
+  
+  height: 600px;
   border: 2px solid black;
+}
+.caption_tableau{
+  font-size: 36px;
 }
 th{
   border: 2px solid black;
