@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva+Guides&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/inscription.css">
 </head>
 <body>
 
 
         <header id="Entete" class="Entete">
-            <div class="global">
+            <div class="global__acceuil">
                 <label for="chk-bouton" id="bouton">
-                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=001133" width="32" height="32">
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff" width="32" height="32">
                 </label>
                 <input type="checkbox" name="" id="chk-bouton">
                 <nav class="Entete__navigation">
@@ -27,13 +30,18 @@
                     <a href="#video">video</a>
                     <a href="#Pied">Info</a>
                 </nav>
-                <div class="logo">
-                    <h3>Une page web-TP2</h1>
-                    <h3>Auteur: Olivia-ly Thiam-Akoua 582-1W1-Mise en page Web</h3>
-                    <h3>Collège de Maisonneuve Automne 2024</h3>
-                    <h3>github page: https://v-vvia.github.io/1w1-tp2/</h3>
-                </div>
-                <img class="" src="img/Logo.png" alt="Logo">
+                
+                <!-- <div class="img" >
+                    <img class="Logo" src="img/Logo.png" alt="Logo">
+
+                </div> -->
+                    <div class="texte__header">
+                        <h3 class="pageWeb">Une Page Web-TP2</h1>
+                        <h3>Auteur: Olivia-ly Thiam-Akoua 582-1W1-Mise en page Web</h3>
+                        <h3>Collège de Maisonneuve Automne 2024</h3>
+                        <h3>github page: https://v-vvia.github.io/1w1-tp2/</h3>
+                    </div>
+               
                 
 
                 
@@ -41,54 +49,109 @@
         </header>
     
         <section id="Inscription" class="Inscription">
-            <div class="global">
-                <h1>Inscription</h1>
-                <form action="">
-                    <fieldset>
-                        <legend>
+            <div class="global__inscription">
+                <div class="form">
+                <form id="form" action="">
+                    
+                        <h1>
                             Inscription
-                        </legend>
+                        </h1>
                         <fieldset class="colonne">
-                            <legend>
-                                C'est ta première fois ici? Inscris-toi!
-                            </legend>
-                                    <label>Nom: <input type="text"></label>
-                                    <label>Prénom: <input type="text"></label>
-                                    <label>Courriel: <input type="email"></label>
-                                    <label>Mot de passe: <input type="password"></label>
-                                </fieldset>
+                            <h2>
+                                C'est ta premiere fois ici? Inscris-toi!
+                            </h2>
+                            <div class="boite">
+                                <div class="boite__nom">
+                                    <input type="text" placeholder="Nom" r>
+                                    <img class="icon" src="https://s2.svgbox.net/hero-outline.svg?ic=user&color=fff" width="25" height="25">
+                                    
+                                </div>
+                                <div class="boite__nom">
+                                    <input type="text" placeholder="Username">
+                                    <img class="icon" src="https://s2.svgbox.net/hero-outline.svg?ic=user&color=fff" width="25" height="25">
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                                
+                                <div class="boite">
+                                    <div class="boite__nom">
+                                        <input type="email" placeholder="Courriel">
+                                        <img class="icon" src="https://s2.svgbox.net/hero-outline.svg?ic=mail&color=fff" width="25" height="25">
+                                        
+                                    </div>
+                                    <div class="boite__nom">
+                                        <input type="number" placeholder="Numero de téléphone" >
+                                        <img class="icon" src="https://s2.svgbox.net/materialui.svg?ic=phone&color=fff" width="25" height="25">
+                                    </div>
+                                </div>
+                                <div class="boite">
+                                    <div class="boite__nom">
+                                        <input type="password" placeholder="Mot de passe">
+                                        <img class="icon" src="https://s2.svgbox.net/octicons.svg?ic=lock&color=fff" width="25" height="25">
+                                        
+                                    </div>
+                                    <div class="boite__nom">
+                                        <input type="password" placeholder="Confirmer Mot de passe">
+                                        <img class="icon" src="https://s2.svgbox.net/octicons.svg?ic=lock&color=fff" width="25" height="25">
+                                        
+                                    </div>
+                                </div>
+                                <button type="submit" class="bouton__form">Inscription</button>
+                                
+                                  
+        
+                                    </fieldset>
+                            
                 
                             <fieldset class="colonne">
-                                <legend>
+                                <h2>
                                     Connecte-toi!
-                                </legend>
-                                <label>Courriel: <input type="email"></label>
-                                <label>Mot de passe: <input type="password"></label>
+                                </h2>
+                                <div class="boite">
+                                    <div class="boite__nom">
+                                        <input type="text" placeholder="Username" >
+                                        <img class="icon" src="https://s2.svgbox.net/hero-outline.svg?ic=user&color=fff" width="25" height="25">
+                                    </div>
+                                
+                                
+                                    <div class="boite__nom">
+                                        <input type="password" placeholder="Mot de passe">
+                                        <img class="icon" src="https://s2.svgbox.net/octicons.svg?ic=lock&color=fff" width="25" height="25">
+                                    </div>
+                                </div>
+                                <button type="submit" class="bouton__form">Conexion
+                                </button>
                                 
                             </fieldset>
                             <fieldset class="colonne">
-                                <legend>Inscris-toi à notre infolettre!</legend>
+                                <h2>Inscris-toi a notre infolettre!</h2>
                                 <label><input type="radio" name="vote"><span></span> Oui</label>
                                 <label><input type="radio" name="vote"><span></span> Non</label>
-                            </fieldset>
+                            
                             <fieldset class="colonne">
-                                <legend>Une question? Communique avec nous!</legend>
-                                <label><input type="text"></label>
-                                
+                                <h2>Une question? Communique avec nous!</h2>
+                                <div class="boite">
+                                    
+                                            <input type="text" placeholder="Écrire...">
+                                            <button type="submit" class="bouton__form">Envoyer</button>
+                                    
+    
+                                    </div>
                             </fieldset>
-                            <fieldset id="boutons">
-                                <input type="reset" value="Vider">
-                                <input type="submit" value="Envoyer">
                             </fieldset>
+                           
 
-                    </fieldset>
+                   
                 </form>
+            </div>
     
             </div>
         </section>
         <section id="Tableau" class="Tableau">
             <div class="global">
-                <h1>horaire</h1>
+                
                 <table class="tableau">
                     <caption class="caption_tableau">Quand communiquer avec nous</caption>
                     <thead>
@@ -214,7 +277,7 @@
         </section>
         <section id="Articles" class="Articles">
             <div class="global">
-                <h1>Studio Ghibli</h1>
+                <h1 class="article__h1">Studio Ghibli</h1>
                 <article class="article">
                     <figure>
                         <img src="img/photoFondateur.jpg" alt="Fondateur">
@@ -350,9 +413,14 @@
     
        
         <footer id="Pied" class="Pied">
-            <div class="global">
-                <h1>Info</h1>
+            <div>
+                <h3>Médias sociaux</h3>
+                <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=FFFFFF" width="32" height="32">
+                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=FFFFFF" width="32" height="32">
+                <img src="https://s2.svgbox.net/social.svg?ic=twitter&color=FFFFFF" width="32" height="32">
+
             </div>
+            
     
         </footer>
     

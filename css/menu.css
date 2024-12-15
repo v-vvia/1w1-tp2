@@ -1,15 +1,17 @@
 #bouton{
-    position:relative;
-    top: 10px;
-    left: 10px;
+    position:fixed;
+    
+
+    top: 20px;
+    
     
     
 }
 
-#chk-bouton:checked +nav{
-    display: flex;
+#chk-bouton:checked + .Entete__navigation{
     transform: translateX(0);
 }
+
 #chk-bouton{
     display: none;
 }
@@ -24,12 +26,26 @@
     width:850px;
     flex-direction: row;
     position: fixed;
-    gap: 60px;
-    justify-content: space-between;
+    top: 50px;
+    gap: 20px;
+    justify-content: space-around;
     
 }
 a{
+    color:#fff;
+    text-shadow: 5px 5px #090909b3;
     text-decoration: none;
-    color: black;
+    font-family:khiara, sans-serif;
+    font-size: 3em;
+}
+a:hover{
+    color:white;
+    
+    
+}
+a:active{
+    font-size: 2rem;
+    cursor: pointer;
+    
 }
 
