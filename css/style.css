@@ -225,8 +225,11 @@ label{
   font-size: 36px;
 }
 th{
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
+}
+th p{
+  
 }
 td{
   border: 2px solid black;
