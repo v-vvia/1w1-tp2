@@ -297,6 +297,9 @@ tr td{
     /* flex-wrap: nowrap;  */
     
   }
+  .Texte p{
+    font-family: 'Times New Roman', Times, serif;
+  }
   
   figure figcaption{
     text-align: center;
@@ -360,10 +363,12 @@ tr td{
 .Galerie a:hover{
   color: red;
   text-decoration: underline;
+  cursor: pointer;
 }
 .Galerie a:active, a:visited{
-  color: black;
+  
   font-size: 1em;
+  cursor: wait;
 }
 /* ///////////////////////////////////////////////////////video//////////////////////////////////////////////////////  */
 
@@ -399,9 +404,77 @@ tr td{
 iframe{
   border-radius: 15px;
 }
+/* /////////////////////////////////////////////////////////////////////PiedDePage//////////////////////////////////////////////////////////////  */
 
 .Pied .global{
   background-color: black;
+  
    
+}
+.pied{
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  color: #fff;
+}
+
+.barreRecherche h3,.reseauSociaux h3,.texte__pied h3 {
+  padding-bottom:10px ;
+}
+.texte__pied ul li .a__pied{
+  color: white;
+}
+.texte__pied ul li .a__pied:hover{
+  color: yellow;
+  cursor: pointer;
+}
+.Pied ul li .a__pied:visited, .a__pied:active{
+  font-size: 1em;
+  cursor: wait;
+}
+ul li{
+  list-style-type: none;
+}
+
+/* //////////////////////////////////////////////////////////////////barreRecherche //////////////////////////////////////////////////////////////////  */
+
+
+
+
+#recherche{
+  
+  background-color: transparent;
+  color: rgb(245, 244, 243);
+  padding: 7px;
+  width: 250px;
+  border: none;
+  
+  
+  
+}
+.recherche__input {
+  font-size: 1rem;
+  color : #ccc;
+  border : none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.recherche {
+  
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width : 200px;
+}
+.recherche__input::placeholder{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+.recherche__input:focus {
+  border : none;
+  outline: none;
+ /* background-color: rgba(0,0,0,0); */
+ background-color: rgba(255,255,255,.05);
 }
 
