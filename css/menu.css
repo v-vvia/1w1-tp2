@@ -28,12 +28,12 @@
     position: fixed;
     top: 50px;
     gap: 20px;
-    justify-content: space-around;
+    justify-content:space-between
     
     
     
 }
-a{
+.Entete__navigation a{
     color:#558abbdd;
     text-shadow: 5px 5px #ffffff;
     text-decoration: none;

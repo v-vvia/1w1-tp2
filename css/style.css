@@ -34,42 +34,23 @@ body{
     background-color:#ffffffed;
     
 }
-.global__acceuil{
-    max-width: 1000px;
-    min-height:100vh ;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    display: flex;
-    padding: 30px;
-    border: 3px solid rgb(19, 19, 19);
-    background-image: url("../img/fond4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    
-}
-   .global__inscription{
-   max-width: 1000px;
-    min-height:100vh ;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    display: flex;
-    padding: 30px;
-    border: 3px solid rgb(19, 19, 19);
-    background-image: url("../img/Fond1.jpg");
+
+  
+  
+  /* //////////////////////////////////////////////entete/////////////////////// */
+  .Entete .global{
+   background-image: url("../img/fond4.jpg");
    background-repeat: no-repeat;
-   background-position: center ;
    background-size: cover;
+   background-position: center;
 
-}
-
- /* //////////////////////////////////////////////entete/////////////////////// */
-.Entete{
+ }
+ .Entete{
   display: flex;
   
   
 }
+
 .global .Entete{
   background-image: url("../img/Fond2.jpg");
 }
@@ -90,7 +71,12 @@ body{
 }
 
 /* /////////////////////////////////////////////////////////////////////inscription////////////////////////////////////////////  */
-
+.Inscription .global{
+  background-image: url(../img/Fond1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .form{
   width: 1000px;
   display: flex;
@@ -207,6 +193,11 @@ label{
 
 
 /* /////////////////////////////////////////////////////////////////tableau/////////////////////////////////////////// */
+.Tableau .global{
+  background-image: url("../img/Fond2.jpg");
+  background-position: center;
+
+}
 .tableau__{
   display: flex;
   align-items: center;
@@ -260,6 +251,8 @@ tr td{
     justify-content: space-between;
     /* flex-wrap: nowrap; */
     padding: 5px;
+    border-radius: 56px;
+    border: hidden;
   
   }
   
@@ -282,17 +275,18 @@ tr td{
   .article:hover{
     transform: scale(2);
   /* filter:grayscale(1); */
-  transition: transform 2.5s;
+  transition: transform 2.5s ease-in-out ;
   background-color: #fff;
   align-self: baseline;
   
   
   }
   .Articles h1{
+    height: 0;
     font-family: khiara, sans-serif;
     font-size: 72px;
-    padding-top: 54px;
-    color: #558ABB;
+    padding-top: 45px;
+    color: black;
 
   }
   .Texte{
@@ -316,20 +310,98 @@ tr td{
     color:#558ABB;
   }
   
-/* /////////////////////////////////////////////////////gallerie///////////////////////////////// */
-.galerie{
+/* /////////////////////////////////////////////////////galerie///////////////////////////////// */
+.h1__Galerie{
+  text-align: center;
+  font-family: niagato, sans-serif;
+  font-size: 46px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: black;
+  width: 1000px;
+  height: 0;
+}
+.galerie__complete{
+  width: 1000px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
 
+.img__galerie{
+
+  padding: 10px;
 }
-.h1{
+  
+  
+  
+.image:hover{
+  transform:rotate(1turn);
+  transition: transform 2.5s ease-in-out;
+}
+.image{
+  border-radius: 20px;
+  border: 4px dashed #19457b;
+}
+.Galerie .img__galerie h1{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #558abbab;
+  
+}
+.Galerie a{
+  
+  text-decoration: none;
+  text-align: center;
+  width: 1000px;
+}
+.Galerie a:hover{
+  color: red;
+  text-decoration: underline;
+}
+.Galerie a:active, a:visited{
+  color: black;
+  font-size: 1em;
+}
+/* ///////////////////////////////////////////////////////video//////////////////////////////////////////////////////  */
+
+.video .global{
+  background-image: url(../img/Fond5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.video__{
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+  
 }
-.Pied{
-    max-width: 1000px;
-    min-height:100vh ;
-    background-color: black;
-    color: white;
-    margin: 0 auto;
+.bandeAnnonce{
+  width: 800px;
+  height: 600px;
+  display: flex;
+  
+}
+.bandeAnnonce iframe{
+  display: flex;
+  align-self: center;
+}
+.bandeAnnonce h1{
+  display: flex;
+  align-self: center;
+  font-family: niagato, sans-serif;
+}
+iframe{
+  border-radius: 15px;
+}
+
+.Pied .global{
+  background-color: black;
+   
 }
 
