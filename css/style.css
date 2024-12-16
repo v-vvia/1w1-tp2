@@ -219,21 +219,40 @@ label{
   
   
   height: 600px;
-  border: 2px solid black;
-}
-.caption_tableau{
-  font-size: 36px;
-}
-th{
-  /* border: 2px solid black; */
-
-}
-th p{
   
 }
-td{
-  border: 2px solid black;
+.tableau thead{
+  height: 30px;
+
 }
+.tableau .diagonal{
+  transform: rotate(45deg);
+  text-align: center;
+
+}
+.centre{
+  text-align: center;
+}
+
+.caption_tableau{
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: niagato, sans-serif;
+}
+tr th{
+  background-color: #558abb68;
+  
+}
+thead tr{
+  font-weight: 200;
+}
+tr td{
+  background-color: #ffffff59;
+}
+.indisponible{
+  background-color: rgba(220, 20, 60, 0.393);
+}
+
 
 /* ////////////////////////////////////////////////////////Articles Principaux////////////////// */
 .article{
@@ -269,6 +288,13 @@ td{
   
   
   }
+  .Articles h1{
+    font-family: khiara, sans-serif;
+    font-size: 72px;
+    padding-top: 54px;
+    color: #558ABB;
+
+  }
   .Texte{
     padding-left: 25px;
     
@@ -278,13 +304,18 @@ td{
     
   }
   
-  figcaption{
+  figure figcaption{
     text-align: center;
-  }
-  .article__h1{
+    font-family: niagato, sans-serif;
+    font-size: 20px;
     
-    padding-top: 54px;
   }
+  .Texte h2{
+    font-family: niagato, sans-serif;
+    font-size: 40px;
+    color:#558ABB;
+  }
+  
 /* /////////////////////////////////////////////////////gallerie///////////////////////////////// */
 .galerie{
   display: flex;

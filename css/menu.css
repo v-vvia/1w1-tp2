@@ -30,10 +30,12 @@
     gap: 20px;
     justify-content: space-around;
     
+    
+    
 }
 a{
-    color:#fff;
-    text-shadow: 5px 5px #090909b3;
+    color:#558abbdd;
+    text-shadow: 5px 5px #ffffff;
     text-decoration: none;
     font-family:khiara, sans-serif;
     font-size: 3em;
